@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Home | Mary Rose Navigation Project</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="pages/about.html"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="pages/services.html"><i class="fa-solid fa-briefcase"></i> Services</a></li>
+
+        <li class="dropdown">
+            <a href="#"><i class="fa-solid fa-bars"></i> More</a>
+
+            <ul class="dropdown-content">
+                <li><a href="pages/gallery.html"><i class="fa-solid fa-image"></i> Gallery</a></li>
+                <li><a href="pages/contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </li>
+
+        <button onclick="toggleDark()" class="dark-btn">🌙</button>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+<p>
+    This is my simple navigation bar project that I created using HTML, CSS, and a little JavaScript.
+</p>
+</section>
+
+<footer>
+    <p>© 2026 Mary Rose Punla | BSIT 1E</p>
+</footer>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
